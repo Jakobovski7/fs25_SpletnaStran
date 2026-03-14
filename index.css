@@ -1,3 +1,14 @@
+/* GENERAL ------------------------------------------------------*/
+#main {
+    margin-top: 200px;
+}
+body {
+    margin: 0px;
+}
+/* GLAVA --------------------------------------------------------*/
+.site-header {
+    margin: 0px;
+}
 .header-top {
     background-color: black;
     width: 100%;
@@ -12,20 +23,64 @@
 .header-menu {
     margin-top: -100px;
     position: fixed;
-}
-.site-header {
-    margin: 0px;
-}
-#main {
-    margin-top: 200px;
-}
-body {
-    margin: 0px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    height: 25px;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
 }
 
+.HamburgerGumb {
+    width: 50px;
+    height: 25px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
+}
+.HamburgerGumb span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: darkred;
+    border-radius: 10px;
+}
+.GumbTeme {
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-right: 3px solid peru;
+    border-top: 3px solid peru;
+    border-bottom: 3px solid peru;
+    border-left: 3px solid peru;
+    font-size: 21px;
+    color: peru;
+}
+
+#naslov {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Poglavja {
+    margin-right: 50px;
+    display: flex;
+}
+#Teme {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
 #GimnazijaLogo {
-    width: 100px;
-    padding-right: 30px;
+    width: 90px;
+    padding-inline: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #GiantsLogo {
     width: 250px;
