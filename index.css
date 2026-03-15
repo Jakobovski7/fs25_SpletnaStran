@@ -4,13 +4,15 @@
 }
 body {
     margin: 0px;
+    background-color: black;
+    color: aliceblue;
 }
 /* GLAVA --------------------------------------------------------*/
 .site-header {
     margin: 0px;
 }
 .header-top {
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     width: 100%;
     position: fixed;
     display: flex;
@@ -18,13 +20,12 @@ body {
     /* padding: 10px 20px; */
     align-items: center;
     margin-top: -200px;
-    color: aliceblue;
 }
 .header-menu {
     margin-top: -100px;
     position: fixed;
     width: 100%;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(23, 23, 23);
     height: 25px;
     justify-content: flex-start;
     display: flex;
@@ -62,13 +63,54 @@ body {
     font-size: 21px;
     color: peru;
 }
+.GumbTeme.active {
+    background-color: rgb(41, 41, 41);
+}
+#sidebar {
+    position: fixed;
+    top: 165px;      /* height of your header */
+    left: -290px;    /* hidden outside the screen */
+    width: 200px;
+    background-color: rgba(40, 40, 40, 0.8);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    bottom: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    border-right: 3px solid peru;
+}
+#sidebar.open {
+    left: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    border: 3px solid peru;
+}
+.sidebarItem {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background: none;
+    border: 2px solid peru;
+    color: peru;
+    padding: 10px;
+    cursor: pointer;
+}
 
 #naslov {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 37px;
+    color: white;
+    text-decoration: underline;
 }
 #Poglavja {
     margin-right: 50px;
     display: flex;
+    padding-left: 20px;
 }
 #Teme {
     display: flex;
