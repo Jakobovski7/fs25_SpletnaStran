@@ -62,6 +62,7 @@ body {
     border-left: 3px solid peru;
     font-size: 21px;
     color: peru;
+    border-radius: 10px;
 }
 .GumbTeme.active {
     background-color: rgb(41, 41, 41);
@@ -81,16 +82,16 @@ body {
     bottom: 20px;
     border-radius: 15px;
     backdrop-filter: blur(2px);
-    border-right: 3px solid peru;
+    border: 5px solid peru;
 }
 #sidebar.open {
     left: 20px;
     bottom: 20px;
     border-radius: 15px;
     backdrop-filter: blur(2px);
-    border: 3px solid peru;
+    border: 5px solid peru;
 }
-.sidebarItem {
+.poglavje {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -99,6 +100,9 @@ body {
     color: peru;
     padding: 10px;
     cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 #naslov {
