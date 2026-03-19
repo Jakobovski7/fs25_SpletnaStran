@@ -1,0 +1,145 @@
+/* GENERALNO ------------------------------------------------------*/
+#main {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.podnaslov {
+    margin-left: 50px;
+    color: lightgray;
+    font-family: sans-serif;
+}
+.besedilo {
+    margin-left: 90px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    margin-left: 0px;
+    background-color: black;
+    color: aliceblue;
+}
+/* GLAVA --------------------------------------------------------*/
+.site-header {
+    margin: 0px;
+}
+.header-top {
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+    align-items: center;
+    margin-top: -200px;
+}
+.header-menu {
+    margin-top: -100px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    height: 25px;
+    justify-content: flex-start;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.HamburgerGumb {
+    width: 50px;
+    height: 25px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
+}
+.HamburgerGumb span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: darkred;
+    border-radius: 10px;
+}
+.GumbTeme {
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-right: 3px solid peru;
+    border-top: 3px solid peru;
+    border-bottom: 3px solid peru;
+    border-left: 3px solid peru;
+    font-size: 21px;
+    color: peru;
+    border-radius: 10px;
+}
+.GumbTeme.active {
+    background-color: rgb(41, 41, 41);
+}
+#naslov {
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 37px;
+    color: white;
+    text-decoration: underline;
+}
+#Teme {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+#GimnazijaLogo {
+    width: 90px;
+    padding-inline: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#GiantsLogo {
+    width: 250px;
+    margin-left: 30px;
+}
+/* STRANSKI MENI -------------------------------------------------------------------*/
+#sidebar {
+    position: fixed;
+    top: 165px;      
+    left: -290px;    /* skrito zunaj zaslona */
+    width: 200px;
+    background-color: rgba(40, 40, 40, 0.8);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    bottom: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    border: 5px solid peru;
+}
+#sidebar.open {
+    left: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    border: 5px solid peru;
+}
+.poglavje {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background: none;
+    border: 2px solid peru;
+    color: peru;
+    padding: 10px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#Poglavja {
+    margin-right: 50px;
+    display: flex;
+    padding-left: 20px;
+}
+
