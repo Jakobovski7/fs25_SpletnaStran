@@ -1,19 +1,19 @@
 /* GENERALNO ------------------------------------------------------*/
-#main {
+#main {  
     margin-top: 200px;
     margin-left: 100px;
 }
-.podnaslov {
+.podnaslov { /* oblikuje podnaslove */
     margin-left: 50px;
     color: lightgray;
     font-family: sans-serif;
 }
-.besedilo {
+.besedilo { /* oblikuje besedilo */
     margin-left: 90px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-body {
+body { /* oblikuje cel html dokument */
     margin-left: 0px;
     background-color: black;
     color: aliceblue;
@@ -22,28 +22,28 @@ body {
 site-header {
     margin: 0px;
 }
-.header-top {
+.header-top { /* oblikuje zgornji del glave spletne strani */
     background-color: rgb(20, 20, 20);
-    width: 100%;
-    position: fixed;
+    width: 100%; /* razširi glavo čez cel zaslon */
+    position: fixed; /* fiksira glavo. kar pomeni, da se ta ne premika ko skrolamo */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*naredi, da je med elemti prostor, torej se njihovi robovi ne stikajo */
     /* padding: 10px 20px; */
-    align-items: center;
-    margin-top: -200px;
+    align-items: center; /*poravna elemente na sredino */
+    margin-top: -200px; /* premakne glavo za 200px gor, ker je body namaknjen za 200px dol in glava je del bodyija */
 }
-.header-menu {
-    margin-top: -100px;
+.header-menu { /* oblikuje spodnji del glave (meni za izbiro) */
+    margin-top: -100px; /* meni postavi pod zgornji del glave */
     position: fixed;
-    width: 100%;
+    width: 100%; /* raztegne meni čez cel zaslon */
     background-color: rgb(23, 23, 23);
-    height: 25px;
+    height: 25px; /* višina menija */
     justify-content: flex-start;
     display: flex;
     padding: 10px;
     gap: 10px;
 }
-.HamburgerGumb {
+.HamburgerGumb { /* oblikuje gumb za odprtje seznama poglavij */
     width: 50px;
     height: 25px;
     background: none;
