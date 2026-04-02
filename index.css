@@ -18,6 +18,10 @@ body { /* oblikuje cel html dokument */
     background-color: black;
     color: aliceblue;
 }
+.naštevanje {
+    padding-left: 130px;
+    margin-top: -15px;
+}
 /* GLAVA --------------------------------------------------------*/
 site-header {
     margin: 0px;
@@ -146,18 +150,25 @@ site-header {
 /* NOGA ---------------------------------------------------------- */
 
 footer {
-    padding-left: 100px;
+    padding-left: 0px;
     background-color: rgb(40, 40, 40);  
     text-align: center; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color: peru; 
     font-weight: bold;
-    width: 100%;
+    padding-bottom: 10px;   
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 5px;
+    border-color: peru;
+    border-radius: 40px;
     
 }
 #linkGiants:link {
     color: orange;
 }
 #linkGiants:visited {
-    color: green;
+    color: red;
 }
