@@ -43,25 +43,25 @@ site-header {
     padding: 10px;
     gap: 10px;
 }
-.HamburgerGumb { /* oblikuje gumb za odprtje seznama poglavij */
-    width: 50px;
+.HamburgerGumb { /* oblikuje gumb za odprtje seznama poglavij (tričrtni gumb)*/
+    width: 50px; 
     height: 25px;
     background: none;
     border: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Razporedi tri črte, ki sestavlajo gumb */
     justify-content: space-between;
-    cursor: pointer;
+    cursor: pointer; /* Spremeni kursor na kazalca iy puščice */
     padding: 0;
 }
-.HamburgerGumb span {
+.HamburgerGumb span { /* uredi tri črte v gumbu */
     display: block;
     height: 5px;
     width: 100%;
     background: darkred;
     border-radius: 10px;
 }
-.GumbTeme {
+.GumbTeme { /* Uredi gumbe za izbiro tem */
     background: none;
     border: none;
     padding: 5px 5px;
@@ -74,33 +74,33 @@ site-header {
     color: peru;
     border-radius: 10px;
 }
-.GumbTeme.active {
+.GumbTeme.active { /* Spremeni barvo oyadja, kadar je izbrana določena tema */
     background-color: rgb(41, 41, 41);
 }
-#naslov {
+#naslov { /* Uredi naslov spletne strani */
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
     font-size: 37px;
     color: white;
     text-decoration: underline;
 }
-#Teme {
+#Teme { /* Razporedi gumbe za izbiro teme */
     display: flex;
     gap: 10px;
     cursor: pointer;
     align-items: center;
 }
-#GimnazijaLogo {
+#GimnazijaLogo { /* Uredi logo gimnazije, zgoraj desno */
     width: 90px;
     padding-inline: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#GiantsLogo {
+#GiantsLogo { /* Uredi logo Giants software-a */
     width: 250px;
     margin-left: 30px;
 }
 /* STRANSKI MENI -------------------------------------------------------------------*/
-#sidebar {
+#sidebar { /* Uredi in umesti stranski meni, za izbiro poglavij v izbrani temi */
     position: fixed;
     top: 165px;      
     left: -290px;    /* skrito zunaj zaslona */
@@ -117,14 +117,14 @@ site-header {
     backdrop-filter: blur(2px);
     border: 5px solid peru;
 }
-#sidebar.open {
+#sidebar.open { /* Uredi izgled stranskega menija, kadar jw ta odprt (prikazan na zaslonu) */
     left: 20px;
     bottom: 20px;
     border-radius: 15px;
     backdrop-filter: blur(2px);
     border: 5px solid peru;
 }
-.poglavje {
+.poglavje { /* določi kako bo prikazan gumb za izbiro poglavja v stranskem meniju */
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -156,7 +156,7 @@ footer {
     
 }
 #linkGiants:link {
-    color: orange;
+    color: rgb(255, 94, 0);
 }
 #linkGiants:visited {
     color: green;
