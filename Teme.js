@@ -41,6 +41,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const skupaj = `Zadnja sprememba strani: ${dan}. ${mesec}. ${leto} ob ${ura}:${minuta}:${sekunda}`; //vse konstante sestavimo skupaj v koncno obliko zapisa
     outputElement.textContent = skupaj; //izpisemo koncno obliko
+
+    // Scroll na ustrezno poglavje
+    // const poglavjaGumbi = document.querySelectorAll(".poglavje");
+
+    // poglavjaGumbi.forEach(gumb => {
+    //     gumb.addEventListener("click", () => {
+    //         const targetId = gumb.dataset.target;
+    //         const targetElement = document.getElementById(targetId);
+
+    //         if (targetElement) {
+    //             targetElement.scrollIntoView({
+    //                 behavior: "smooth",
+    //                 block: "start"
+    //             });
+    //         }
+    //     });
+    // });
+    const poglavjaGumbi = document.querySelectorAll(".poglavje");
+
+    poglavjaGumbi.forEach(gumb => {
+        gumb.addEventListener("click", () => {
+            const targetId = gumb.dataset.target;
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const yOffset = -200; // višina tvojega headerja
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                    top: y,
+                    behavior: "smooth"
+                });
+            }
+
+            // zapri sidebar po kliku
+            sidebar.classList.remove("open");
+        });
+    });
+
+    console.log(targetId, targetElement);
 })
 
 
