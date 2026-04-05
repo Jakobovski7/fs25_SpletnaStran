@@ -42,45 +42,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const skupaj = `Zadnja sprememba strani: ${dan}. ${mesec}. ${leto} ob ${ura}:${minuta}:${sekunda}`; //vse konstante sestavimo skupaj v koncno obliko zapisa
     outputElement.textContent = skupaj; //izpisemo koncno obliko
 
-    // Scroll na ustrezno poglavje
-    // const poglavjaGumbi = document.querySelectorAll(".poglavje");
+    // Scroll na ustrezno poglavje //
 
-    // poglavjaGumbi.forEach(gumb => {
-    //     gumb.addEventListener("click", () => {
-    //         const targetId = gumb.dataset.target;
-    //         const targetElement = document.getElementById(targetId);
+    const poglavjaGumbi = document.querySelectorAll(".poglavje"); // pridobivanje gumbov za poglavja
 
-    //         if (targetElement) {
-    //             targetElement.scrollIntoView({
-    //                 behavior: "smooth",
-    //                 block: "start"
-    //             });
-    //         }
-    //     });
-    // });
-    const poglavjaGumbi = document.querySelectorAll(".poglavje");
-
-    poglavjaGumbi.forEach(gumb => {
+    poglavjaGumbi.forEach(gumb => {  // dodajanje, kaj se bo zgodilo ob kliku
         gumb.addEventListener("click", () => {
-            const targetId = gumb.dataset.target;
+            const targetId = gumb.dataset.target;   // določanje cilja za skrolanje
             const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                const yOffset = -200; // višina tvojega headerja
-                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            if (targetElement) {    // preverjanje, če zadani cilj obstaja
+                const yOffset = -200; // določi višino glave
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset; // izračun, koliko je potrebno skrolati
 
-                window.scrollTo({
+                window.scrollTo({ // skrolanje na cilj, v tem primeru je to Y
                     top: y,
                     behavior: "smooth"
                 });
             }
-
-            // zapri sidebar po kliku
-            sidebar.classList.remove("open");
+            
+            sidebar.classList.remove("open"); // zapre sidebar po kliku
         });
     });
-
-    console.log(targetId, targetElement);
-})
+});
 
 

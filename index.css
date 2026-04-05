@@ -30,7 +30,7 @@ html{
 }
 body { /* oblikuje cel html dokument */
     margin-left: 0px;
-    background-color: black;
+    background: linear-gradient(to right, black, rgb(85, 0, 0));
     color: aliceblue;
 }
 .naštevanje {
@@ -50,7 +50,7 @@ site-header {
     margin: 0px;
 }
 .header-top { /* oblikuje zgornji del glave spletne strani */
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(23, 23, 23);
     width: 100%; /* razširi glavo čez cel zaslon */
     position: fixed; /* fiksira glavo. kar pomeni, da se ta ne premika ko skrolamo */
     display: flex;
@@ -60,7 +60,7 @@ site-header {
     margin-top: -200px; /* premakne glavo za 200px gor, ker je body namaknjen za 200px dol in glava je del bodyija */
 }
 .header-menu { /* oblikuje spodnji del glave (meni za izbiro) */
-    margin-top: -100px; /* meni postavi pod zgornji del glave */
+    margin-top: -85px; /* meni postavi pod zgornji del glave */
     position: fixed;
     width: 100%; /* raztegne meni čez cel zaslon */
     background-color: rgb(23, 23, 23);
@@ -108,7 +108,12 @@ site-header {
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
     font-size: 37px;
     color: white;
-    text-decoration: underline;
+    border: 5px solid peru;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-inline: 10px;
+    background: linear-gradient(to right, rgb(121, 5, 5), rgb(4, 46, 85));
 }
 #Teme { /* Razporedi gumbe za izbiro teme */
     display: flex;
@@ -164,7 +169,7 @@ site-header {
     border-radius: 5px;
     font-size: 15px;
 }
-#Poglavja { 
+#Poglavja { /* razporedi gumbe za izbiro poglavij */
     margin-right: 50px;
     display: flex;
     padding-left: 20px;
@@ -172,9 +177,9 @@ site-header {
 
 /* NOGA ---------------------------------------------------------- */
 
-footer {
+footer { /* uredi nogo */
     padding-left: 0px;
-    background-color: rgb(40, 40, 40);  
+    background-color: rgb(34, 0, 0); 
     text-align: center; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     color: peru; 
@@ -189,9 +194,9 @@ footer {
     border-color: peru;
     border-radius: 40px;
 }
-#linkGiants:link {
+#linkGiants:link { /* spremeni barvo linka do Giants-ove spletne strani, preden je bila ta obiskana */
     color: rgb(255, 94, 0);
 }
-#linkGiants:visited {
+#linkGiants:visited { /* spremeni barvo linka do Giants-ove spletne strani, ko je bil link že obiskan */
     color: red;
 }
