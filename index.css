@@ -8,10 +8,20 @@
     color: lightgray;
     font-family: sans-serif;
 }
+.podnaslov2 {
+    margin-left: 90px;
+    font-family: sans-serif;
+    color: lightgray;
+}
 .besedilo { /* oblikuje besedilo */
     margin-left: 90px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* background-color: rgb(20, 20, 20); */
+    margin-right: 90px;
+    color: lightgray;
 }
 body { /* oblikuje cel html dokument */
     margin-left: 0px;
@@ -20,7 +30,15 @@ body { /* oblikuje cel html dokument */
 }
 .naštevanje {
     padding-left: 130px;
-    margin-top: -15px;
+    margin-top: -7px;
+}
+.screenshot {
+    width: 900px;
+    margin-left: 90px;
+}
+#orodnaVrstica {
+    width: 700px;
+    margin-left: 90px;
 }
 /* GLAVA --------------------------------------------------------*/
 site-header {
